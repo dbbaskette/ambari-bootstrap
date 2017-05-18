@@ -141,7 +141,6 @@ EOF
 done
 
 if [ "${recommendation_strategy}" != 'false' ]; then
-echo " ********CREATING RESOURCES CONFIG ************"
 cat > ${tmp_dir}/configurations.json <<EOF
 { "resources" : [ {
   "Versions" : { "stack_name" : "${ambari_stack_name}", "stack_version" : "${ambari_stack_version}" },
