@@ -21,7 +21,7 @@ ambari_services=${ambari_services:-AMBARI_METRICS FALCON FLUME
 : ${cluster_name:="hdp"}
 : ${ambari_blueprint_name:="recommended"}
 : ${deploy:=true}
-: ${recommendation_strategy:="false"}  ## valid options:
+: ${recommendation_strategy:="ALWAYS_APPLY_DONT_OVERRIDE_CUSTOM_VALUES"}  ## valid options:
 ## NEVER_APPLY, ONLY_STACK_DEFAULTS_APPLY, ALWAYS_APPLY, ALWAYS_APPLY_DONT_OVERRIDE_CUSTOM_VALUES
 
 ## for curl requests
