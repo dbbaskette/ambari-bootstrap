@@ -42,6 +42,8 @@ def create_blueprint(
         host_group_recommendation,
         custom_configurations):
     """Create Ambari blueprint."""
+    print configuration_recommendation
+    
     blueprint = {}
     recommended_configurations = configuration_recommendation['resources'][0][
             'recommendations']['blueprint']['configurations']
