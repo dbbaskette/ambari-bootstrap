@@ -152,7 +152,7 @@ EOF
 fi
 
 ## merge recommendations with custom configuration
-
+echo "PAUSING"
 read -p "CHECK"
 
 python ${__dir}/create_blueprint.py \
