@@ -152,6 +152,9 @@ EOF
 fi
 
 ## merge recommendations with custom configuration
+
+read -p "CHECK"
+
 python ${__dir}/create_blueprint.py \
     --conf_recommendation ${tmp_dir}/configurations.json \
     --host_recommendation ${tmp_dir}/host_groups.json \
